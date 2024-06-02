@@ -27,7 +27,6 @@ export const SelectPoolModalContent = ({ pools, onSelect }: Props) => {
       <div className="h-full md:max-h-[calc(70vh-100px)] overflow-auto mb-20 px-20 space-y-20">
         <div className="flex justify-between text-blue-4 mt-10">
           <span>Pools</span>
-          <span>APR</span>
         </div>
         {filteredPools.map((pool) => (
           <button
@@ -48,7 +47,6 @@ export const SelectPoolModalContent = ({ pools, onSelect }: Props) => {
               />
               <span className="ml-10">{pool.name}</span>
             </span>
-            <span className="text-12">{pool.apr.toFixed(2)}%</span>
           </button>
         ))}
       </div>
